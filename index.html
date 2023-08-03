@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,7 +20,6 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/media.css" />
-   
   </head>
 
   <body>
@@ -28,43 +27,48 @@
     <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
-          <div class="header-logo-container"> <a href="./index.html" class="header-logo link">
-            Web<span class="header-logo-span">Studio</span>
-          </a></div>
-        <div class="header-menu-container"> <ul class="header-menu list">
-          <li class="header-menu-item">
-            <a href="./index.html" class="header-menu-link link current"
-              >Studio</a
-            >
-          </li>
-          <li class="header-menu-item">
-            <a href="./portfolio.html" class="header-menu-link link"
-              >Portfolio</a
-            >
-          </li>
-          <li class="header-menu-item">
-            <a href="" class="header-menu-link link">Contacts</a>
-          </li>
-        </ul></div>
+          <div class="header-logo-container">
+            <a href="./index.html" class="header-logo link">
+              Web<span class="header-logo-span">Studio</span>
+            </a>
+          </div>
+          <div class="header-menu-container">
+            <ul class="header-menu list">
+              <li class="header-menu-item">
+                <a href="./index.html" class="header-menu-link link current"
+                  >Studio</a
+                >
+              </li>
+              <li class="header-menu-item">
+                <a href="./portfolio.html" class="header-menu-link link"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="header-menu-item">
+                <a href="" class="header-menu-link link">Contacts</a>
+              </li>
+            </ul>
+          </div>
         </nav>
-<div class="header-contacts-container"> 
-  <address id="header-contacts" class="header-contacts">
-  <ul class="header-contacts-list list">
-    <li class="header-contacts-item">
-      <a
-        href="mailto:info@devstudio.com"
-        class="header-contacts-link link"
-        >info@devstudio.com</a
-      >
-    </li>
-    <li class="header-contacts-item">
-      <a href="tel:+110001111111" class="header-contacts-link link"
-        >+11 (000) 111-11-11</a
-      >
-    </li>
-  </ul>
-</address></div>
-      
+        <div class="header-contacts-container">
+          <address id="header-contacts" class="header-contacts">
+            <ul class="header-contacts-list list">
+              <li class="header-contacts-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="header-contacts-link link"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="header-contacts-item">
+                <a href="tel:+110001111111" class="header-contacts-link link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
         <div>
           <button type="button" class="menu-open-button js-open-menu">
             <svg class="header-menu-icon" width="32" height="22">
@@ -73,11 +77,12 @@
           </button>
         </div>
       </div>
+
       <div class="mob-menu js-menu-container">
         <div>
           <button type="button" class="menu-close-button js-close-menu">
             <svg class="close-menu-icon" width="8" height="8">
-              <use href="./images/icons.svg#close-icon"></use>
+              <use href="./images/icons.svg#cross"></use>
             </svg>
           </button>
         </div>
@@ -214,8 +219,7 @@
           <ul class="business-list list">
             <li class="work-samples">
               <img
-              srcset="./images/img1.jpg 1x,
-              ./images/img1-2x.jpg 2x"
+                srcset="./images/img1.jpg 1x, ./images/img1-2x.jpg 2x"
                 src="./images/img1.jpg"
                 alt="Campaigns"
                 width="360"
@@ -224,8 +228,7 @@
             </li>
             <li class="work-samples">
               <img
-              srcset="./images/img2.jpg 1x,
-              ./images/img2-2x.jpg 2x"
+                srcset="./images/img2.jpg 1x, ./images/img2-2x.jpg 2x"
                 src="./images/img2.jpg"
                 alt="Chat bots"
                 width="360"
@@ -234,8 +237,7 @@
             </li>
             <li class="work-samples">
               <img
-              srcset="./images/img3.jpg 1x,
-              ./images/img3-2x.jpg 2x"
+                srcset="./images/img3.jpg 1x, ./images/img3-2x.jpg 2x"
                 src="./images/img3.jpg"
                 alt="Mobile apps"
                 width="360"
@@ -614,11 +616,11 @@
     </div>
     <script src="./js/modal.js"></script>
     <script
-    defer
-    src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"
-  ></script>
-  <script defer src="js/menu.js"></script>
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/menu.js"></script>
   </body>
 </html>
