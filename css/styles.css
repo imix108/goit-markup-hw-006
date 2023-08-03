@@ -228,8 +228,8 @@ img {
   /* gap: 56px; */
 }
 
-@media only screen and (min-width: 320px) and (max-width: 374px) {
-  .mob-socials-list {
+@media only screen and (min-width: 320px) and (max-width: 374px) 
+  {.mob-socials-list {
     gap: 30px;
   }
 }
@@ -534,39 +534,7 @@ img {
   padding-bottom: 96px;
   gap: 72px;
   /* max-width: 264px; */
-  justify-content: center;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1157px)
-{.footer-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 584px;
-    gap: 72px 24px;
-    align-items: baseline;
-}}
-
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .logo-text-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* margin-bottom: 72px; */
-  }
-}
-
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .form-label {
-    margin-bottom: 16px;
-  }
+  /* justify-content: center; */
 }
 
 .footer-logo {
@@ -599,14 +567,6 @@ img {
   margin: 0 auto;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 767px) 
-{.social-media-container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  /* margin-bottom: 72px; */
-}
-}
 .social-media-text {
   color: var(--white, #fff);
   font-weight: 500;
@@ -660,25 +620,9 @@ img {
 
 .subscribe-container {
   display: block;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
-@media only screen and (min-width: 0px) and (max-width: 767px)
-{.subscribe-container {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-}}
 
-@media only screen and (min-width: 0px) and (max-width: 767px)
-{.subscribe-form {
-    display: flex;
-    flex-direction: column;
-}}
-
-@media only screen and (min-width: 0px) and (max-width: 767px)
-{.subscribe-label {
-    margin-bottom: 16px;
-}}
 .subscribe-text {
   color: var(--white, #fff);
   font-weight: 500;
@@ -733,10 +677,10 @@ margin: 0 auto;
 }
 
 @media only screen and (min-width: 0px) and (max-width: 767px)
-.form-email {
+{.form-email {
     display: flex;
     flex-direction: column;
-}
+}}
 
 .footer-input::placeholder {
   color: var(--white, #fff);
