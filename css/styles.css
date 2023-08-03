@@ -228,7 +228,7 @@ img {
   /* gap: 56px; */
 }
 
-@media only screen and (min-width: 320px) and (max-width: 374px) 
+@media only screen and (min-width: 320px) and (max-width: 427px) 
   {.mob-socials-list {
     gap: 30px;
   }
@@ -676,11 +676,6 @@ margin: 0 auto;
   margin-bottom: 16px;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 767px)
-{.form-email {
-    display: flex;
-    flex-direction: column;
-}}
 
 .footer-input::placeholder {
   color: var(--white, #fff);

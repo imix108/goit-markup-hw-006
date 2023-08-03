@@ -221,9 +221,7 @@
   .footer-container {
     gap: 24px;
   }
-  /* .logo-text-container {
-    padding-left: 108px;
-  } */
+ 
   .footer-logo {
     justify-content: left;
   }
