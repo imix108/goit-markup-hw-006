@@ -37,40 +37,38 @@
     gap: 56px;
   }
 }
-@media only screen and (min-width: 0px) and (max-width: 767px) 
-{
+@media only screen and (min-width: 0px) and (max-width: 767px) {
   .social-media-container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  /* margin-bottom: 72px; */
-}
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.logo-text-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* margin-bottom: 72px; */
-}
-.form-label {
-  margin-bottom: 16px;
-}
-.subscribe-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.subscribe-form {
-  display: flex;
-  flex-direction: column;
-}
-.subscribe-label {
-  margin-bottom: 16px;
-}
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* margin-bottom: 72px; */
+  }
+  .form-label {
+    margin-bottom: 16px;
+  }
+  .subscribe-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .subscribe-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .subscribe-label {
+    margin-bottom: 16px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -81,16 +79,13 @@
     display: flex;
     gap: 40px;
   }
+  .header-container {
+    padding: 0 15px;
+  }
   .menu-open-button {
     display: none;
   }
 
-  .header-container {
-    padding: 0;
-  }
-  .header-logo-container {
-    margin-left: 16px;
-  }
   .header-menu-link {
     color: var(--navyblue);
     font-size: 16px;
@@ -125,6 +120,7 @@
 
   .header-contacts {
     font-style: normal;
+    display: block;
   }
   .header-contacts-list {
     display: flex;
@@ -142,7 +138,7 @@
   }
   .header-contacts-container {
     display: block;
-    padding: 16px 16px 0;
+    /* padding: 16px 16px 0; */
     gap: 12px;
   }
 
@@ -157,25 +153,27 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office.jpg);
+      url(../images/hero-tablet-1x.jpg);
     max-width: 1440px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 112px 54px;
+    padding: 112px 0;
     flex-shrink: 0;
     margin-left: auto;
     margin-right: auto;
   }
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office-2x.jpg);
-}
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-solutions {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-tablet-2x.jpg);
+    }
+  }
 
   .title-one {
     width: 496px;
@@ -192,8 +190,6 @@
   }
   .advantages-section {
     padding-top: 96px;
-    padding-left: 16px;
-    padding-right: 16px;
   }
 
   .text-description {
@@ -210,10 +206,10 @@
   .advantages-description {
     width: calc((100% - 24px) / 2);
   }
-
-  .team-list-item {
-    margin-bottom: 72px;
+  .team-list {
+    gap: 24px;
   }
+
   .team-container {
     padding-left: 108px;
     padding-right: 108px;
@@ -226,11 +222,10 @@
   .customer-section {
     padding-bottom: 96px;
   }
-
-  .footer-container {
+  .customer-list {
     gap: 24px;
   }
- 
+
   .footer-logo {
     justify-content: left;
   }
@@ -256,8 +251,15 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1157px)
-{
+@media (min-width: 768px) and (max-width: 1157px) {
+  .team-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 64px 24px;
+  }
+  .team-list-item:not(:last-child) {
+    margin-bottom: 0;
+  }
   .footer {
     display: block;
   }
@@ -269,32 +271,49 @@
     width: 584px;
     gap: 72px 24px;
     align-items: baseline;
+  }
+  .footer-logo {
+    text-align: start;
+  }
+  .subscribe-form {
+    display: flex;
+    gap: 24px;
+  }
+  .footer-input {
+    width: 264px;
+  }
+  .subscribe-text {
+    justify-content: flex-start;
+  }
+  .footer-submit-button {
+    text-align: center;
+  }
 }
-.footer-logo {
-  text-align: start;
-}
-.subscribe-form {
-  display: flex;
-  gap: 24px;
-}
-.footer-input {
-  width: 264px;
-}
-.subscribe-text {
-  justify-content: flex-start;
-}
-.footer-submit-button {
-  text-align: center;
-}
-
-}
-
 
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .section-solutions {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .section-solutions {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-2x.jpg);
+    }
   }
 
   .header-contacts-container {
@@ -313,9 +332,8 @@
     letter-spacing: 0.02em;
   }
   .section-solutions {
-    padding:188px 0;
+    padding: 188px 0;
   }
-
 
   .title-three-adv {
     color: var(--navyblue, #2e2f42);
@@ -393,22 +411,30 @@
     padding-top: 120px;
     padding-bottom: 120px;
   }
+  .team-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .team-list-item:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .footer {
+    padding-top: 101px;
+    padding-bottom: 100px;
+  }
   .footer-container {
     display: flex;
     flex-wrap: nowrap;
-    padding-top: 101px;
-    padding-bottom: 100px;
-    /* padding-left: 141px; */
     gap: 0;
   }
   .logo-text-container {
-    padding-left: 0;
+    margin-left: 0;
   }
   .social-media-container {
-    padding-left: 120px;
+    margin-left: 120px;
   }
   .subscribe-container {
-    margin: 0;
-    padding-left: 80px;
+    margin-left: 80px;
   }
 }

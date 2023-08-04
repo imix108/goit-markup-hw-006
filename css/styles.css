@@ -44,8 +44,8 @@ h5 {
 
 .container {
   width: 100%;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -90,6 +90,8 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-right: 76px;
+  padding: 24px 0;
+  display: block;
 }
 .header-logo-span {
   color: var(--navyblue);
@@ -98,7 +100,8 @@ img {
 /* Менюшка */
 .header-container {
   display: flex;
-  padding: 25.5px 24px 23.5px 16px;
+  align-items: center;
+
 }
 
 .header-navigation {
@@ -127,13 +130,12 @@ img {
   width: 100vw;
   height: 100vh;
   z-index: 2;
-  padding: 24px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* flex-grow: 1; */
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
+  padding: 40px 35px 40px 40px;
 }
 .mob-menu.is-open {
   transform: translateX(0);
@@ -148,27 +150,41 @@ img {
 
 .menu-close-button {
   position: absolute;
-  display: block;
+  display: flex;
   top: 24px;
   right: 24px;
+  width: 24px;
+  height: 24px;
   margin-left: auto;
   border-radius: 50%;
   cursor: pointer;
   background-color: transparent;
   border: 1px solid var(--cornflower);
+  justify-content: center;
+  align-items: center;
 }
 .close-menu-icon {
   fill: var(--navyblue);
 }
 .mob-menu-list {
-  margin-top: 32px;
   margin-bottom: auto;
 }
-.mob-menu-item {
+.mob-menu-item:not(:last-child) {
   margin-bottom: 40px;
 }
+
+
 .mob-menu-link {
   color: var(--navyblue);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.mob-menu-link-studio {
+  color: var(--ocean);
   font-size: 36px;
   font-weight: 700;
   line-height: 1.11;
@@ -181,12 +197,7 @@ img {
   color: var(--ocean);
 }
 
-.mob-menu-contacts {
-}
-.mob-contacts-list {
-}
 .mob-tel-item {
-  margin-right: 35px;
   margin-bottom: 40px;
 }
 .mob-tel-link {
@@ -220,17 +231,23 @@ img {
 .mob-email-link:focus {
   color: var(--ocean);
 }
-
+.mob-menu-contacts{
+  margin-bottom: 48px;
+}
 .mob-socials-list {
   display: flex;
   width: 100%;
   max-width: 358px;
-  /* gap: 56px; */
+
 }
 
-@media only screen and (min-width: 320px) and (max-width: 427px) 
+@media only screen and (min-width: 320px) and (max-width: 428px) 
   {.mob-socials-list {
     gap: 30px;
+  }}
+ @media only screen and (min-width: 320px) and (max-width: 427px) 
+  {.mob-tel-link {
+    font-size: 20px;
   }
 }
 
@@ -264,21 +281,21 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding: 112px 54px;
+  padding: 112px 0;
   margin-left: auto;
   margin-right: auto;
 }
-.main-section-container {
-}
+
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
+    .section-solutions{
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero-mob-2x.jpg);
-}
+}}
 
 .title-one {
   color: #ffffff;
@@ -290,10 +307,6 @@ img {
   /* max-width: 496px; */
 }
 /* Головний заголовок */
-.section-solutions {
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .title-container {
   margin: 0 auto;
@@ -326,13 +339,11 @@ img {
 }
 /* Друга частина */
 .advantages-section {
-  /* padding: 120px 0; */
   padding: 96px 0;
 }
 
 .advantages-description {
   width: 100%;
-
   /* flex-basis: calc((100% - 72px) / 4); */
 }
 
@@ -403,7 +414,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+ 
 }
 .team-list-item {
   /* width: 100%; */
@@ -524,17 +535,16 @@ img {
 /* Підвал */
 .footer {
   background-color: var(--navyblue);
+  padding-top: 97.5px;
+  padding-bottom: 96px;
 }
 
 .footer-container {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  padding-top: 97.5px;
-  padding-bottom: 96px;
   gap: 72px;
-  /* max-width: 264px; */
-  /* justify-content: center; */
+  
 }
 
 .footer-logo {
@@ -673,7 +683,7 @@ margin: 0 auto;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   opacity: 0.30000001192092896;
   display: block;
-  margin-bottom: 16px;
+  
 }
 
 
